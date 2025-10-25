@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестирование</title>
+    <link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="topic-title">Тестирование</h1>
+            <p id="topic-description">Проверьте свои знания по выбранной теме</p>
+        </header>
+        
+        <div class="progress">
+            <p>Вопрос <span id="current-question">1</span> из <span id="total-questions">?</span></p>
+        </div>
+        
+        <div id="quiz-container">
+            <!-- Вопросы будут генерироваться динамически -->
+        </div>
+        
+        <div class="controls">
+            <button id="prev-btn" class="prev-btn">Предыдущий</button>
+            <button id="check-btn" class="check-btn">Проверить ответ</button>
+            <button id="next-btn" class="next-btn" style="display: none;">Следующий</button>
+            <button id="submit-btn" class="submit-btn" style="display: none;">Завершить тест</button>
+        </div>
+        
+        <div id="result" class="result"></div>
+    </div>
+    
+    <script src="js/test-app.js"></script>
+</body>
+</html>
